@@ -1,0 +1,31 @@
+<!-- post pagination -->
+<nav aria-label="Page navigation Index">
+    <ul class="pagination justify-content-center">
+        {%if page.pagination.prev_path%}
+        <li class="page-item">
+            <a class="page-link" href="{{site.baseurl}}{{page.pagination.prev_path}}">Previous</a>
+        </li>
+        {%else%}
+        <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+        </li>
+        {%endif%} {%if page.pagination.paginate_num>0%} {%for i in page.pagination.nums%} {%assign index = i | minus: 1%} {%if i==page.pagination.current_num%}
+        <li class="page-item active">
+            <span class="page-link">{{i}}</span>
+        </li>
+        {%else%}
+        <li class="page-item">
+            <a class="page-link" href="{{site.baseurl}}{{page.pagination.paths[index]}}">{{i}}</a>
+        </li>
+        {%endif%} {%endfor%} {%endif%} {%if page.pagination.next_path%}
+        <li class="page-item">
+            <a class="page-link" href="{{page.pagination.next_path}}">Next</a>
+        </li>
+        {%else%}
+        <li class="page-item disabled">
+            <span class="page-link">Next</span>
+        </li>
+        {%endif%}
+
+    </ul>
+</nav>

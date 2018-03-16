@@ -1,0 +1,7 @@
+--- 
+    layout: base 
+---
+    <h2>Tag: {{page.tag| upcase}}</h2>
+{% assign post = page.pagination.posts %} 
+{% include postlist.html post=post %} 
+{% include pagination.html %}

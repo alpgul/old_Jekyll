@@ -1,0 +1,30 @@
+---
+common-ext-css:
+  - "/assets/css/bootstrap.min.css"  
+  - "/assets/css/color.css"
+  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+common-ext-js:
+  - "/assets/js/jquery-3.2.1.slim.min.js"
+  - "/assets/js/bootstrap.min.js"
+  - "/assets/js/popper.min.js"  
+comments: true
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  {% include header.html %} 
+    {% include nav.html category=page.category%}
+  <main class="container">
+    <div class="row">
+      <section class="col-md-9">
+        {{ content }}
+      </section>
+      <aside class="col-md-3">{% include rightcontent.html %} </aside>
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+
+</html>
