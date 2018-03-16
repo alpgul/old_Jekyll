@@ -51,18 +51,10 @@
     <meta name="copyright" content="{{site.author}}">
     <meta http-equiv="Reply-to" content="{{site.email}}">
     <!-- Meta Dynamic Variable -->
-    <meta property="article:published_time" content="{{page.date}}"> {%assign tags=page.tags | join: ', '%}
-     {%assign categories=page.categories | join: ', '%} 
-     {%assign keywords=site.keywords%}
-    {% if page.keywords %} 
-    {% assign keywords= keywords| append:', ' | append:page.keywords %} 
-    {% endif %} 
-    {% if page.tags %} 
-    {%assign keywords=keywords | append:', ' | append:tags %} 
-    {% endif %} 
-    {% if page.categories %} 
-    {%assign keywords= keywords | append:', ' | append:categories %} 
-    {% endif %}
+    <meta property="article:published_time" content="{{page.date}}"> {%assign tags=page.tags | join: ', '%} {%assign categories=page.categories | join: ', '%} {%assign keywords=site.keywords%}
+    {% if page.keywords %} {% assign keywords= keywords| append:', ' | append:page.keywords %} {% endif %} {% if page.tags
+    %} {%assign keywords=keywords | append:', ' | append:tags %} {% endif %} {% if page.categories %} {%assign keywords=
+    keywords | append:', ' | append:categories %} {% endif %}
     <meta name="keywords" content="{{keywords}}">
     <!-- SEO -->
     <meta name="robots" content="index, follow">
@@ -88,5 +80,5 @@
 
     <!-- Script -->
     {% if layout.common-ext-js %} {% for js in layout.common-ext-js %} {% include ext-js.html js=js %} {% endfor %} {% endif
-    %} 
+    %} {% include ga.html %}
 </head>
