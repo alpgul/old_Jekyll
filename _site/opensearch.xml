@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>AlpGul | Algorithm - Programing - Guide - Tutorial</ShortName>
+	<Description>Use Google to search AlpGul | Algorithm - Programing - Guide - Tutorial</Description>
+	<Url type="application/rss+xml" template="https://www.google.com/search?as_sitesearch=http://localhost:4000&q={searchTerms}"/>
+</OpenSearchDescription>
