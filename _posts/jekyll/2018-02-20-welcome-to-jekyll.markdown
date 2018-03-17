@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "1Welcome to Jekyll!"
-date:   2018-02-10 20:58:27 +0300
+date:   2018-02-10 20:58:27
 categories: jekyll test
 tags:
     - sample
