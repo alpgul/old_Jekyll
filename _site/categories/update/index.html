@@ -52,9 +52,9 @@
     <meta name="twitter:creator" content="@alpgul">
     <meta name="twitter:site" content="@alpgul">
     <meta property="og:site_name" content="alpgul">
-    <link rel="icon" href="assets/images/circle.ico" class="js-favicon">
-    <link rel="mask-icon" href="assets/images/circle.svg" color="#171717">
-    <link rel="fluid-icon" href="assets/images/circle.png" title="GitHub">
+    <link rel="icon" href="/assets/images/circle.ico" class="js-favicon">
+    <link rel="mask-icon" href="/assets/images/circle.svg" color="#171717">
+    <link rel="fluid-icon" href="/assets/images/circle.png" title="GitHub">
     <meta name="generator" content="Jekyll">
     <meta name="copyright" content="alpgul">
     <meta http-equiv="Reply-to" content="your-email@example.com">
@@ -99,7 +99,16 @@
             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-54BDHMN');</script>
-<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager --><link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+        OneSignal.init({
+            appId: "13ae9310-9cc0-40f4-b57c-261a86ac6596",
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -245,7 +254,22 @@
         </div>
     </li>
     
-</ul> </aside>
+</ul><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify"
+    method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=alpgul', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+    <p>Enter your email address:</p>
+    <input type="hidden" value="alpgul" name="uri" />
+    <input type="hidden" name="loc" value="en_US" />
+    <div class="form-group">
+        <div class="input-group">
+            <input name="email" type=" email " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp
+                " placeholder="Enter email ">
+            <span class="input-group-btn ">
+                <button class="btn btn-theme btn-outline-primary " type="submit ">Subscribe</button>
+            </span>
+        </div>
+        <small id="emailHelp " class="form-text text-muted ">We'll never share your email with anyone else.</small>
+    </div>
+</form> </aside>
     </div>
   </main>
   <!--Footer-->

@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-icon: assets/images/circle.ico
-mask-icon: assets/images/circle.svg
-fluid-icon: assets/images/circle.png
+icon: /assets/images/circle.ico
+mask-icon: /assets/images/circle.svg
+fluid-icon: /assets/images/circle.png
 author: alpgul
 title: AlpGul | Algorithm - Programing - Guide - Tutorial
 email: your-email@example.com
@@ -26,12 +26,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://alpgul.github.io:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://alpgul.herokuapp.com/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title:output_ext
 google_analytics_key: UA-115884491-1
 google_tag_key: GTM-54BDHMN
 disqus:
-  shortname: alptekingulcan
+  shortname: alpgul
 paginate: 10
 twitter_username: jekyllrb
 github_username:  jekyll

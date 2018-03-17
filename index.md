@@ -6,7 +6,6 @@
     paginate: 10
     staticpage: true
 ---
-
 {% include postlist.html post=site.posts %}
 
 {% include pagination.html %}
