@@ -68,8 +68,8 @@
     <meta property="al:android:package" content="{{site.app.package}}">
     <meta property="al:android:app_name" content="{{site.app.name}}">
     <meta property="al:ios:url" content="{{site.app.url}}">
-    <meta property="al:android:url" content="{{site.app.url}}">
-    <link rel="alternate" href="{{site.app.android.url | default:'nil'}}">
+    <meta http-equiv="cache-control" content="max-age=6000" />
+    <link hreflang="tr" rel="alternate" href="{{site.app.android.url | default:'nil'}} ">
 
     <!-- Search Configuration -->
     <link rel="search" type="application/opensearchdescription+xml" title="{{site.name}}" href="/opensearch.xml">
