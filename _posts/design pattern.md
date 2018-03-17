@@ -1,3 +1,16 @@
+---
+layout: post
+title:  "Design Pattern!"
+date:   2018-02-21 20:58:27
+categories: Design Pattern
+description: Design Pattern
+tags:
+    - Design 
+    - Pattern
+images: 
+    url: "https://qph.ec.quoracdn.net/main-qimg-d0ba47447f02c4bb31d86840ec36726b-c"
+    alt: "Design Pattern"
+---
 # Factory Pattern
 ![factory pattern](https://www.tutorialspoint.com/design_pattern/images/factory_pattern_uml_diagram.jpg)
 
